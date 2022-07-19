@@ -21,5 +21,4 @@ Used to set the network: https://chainlist.org/
 25 Cronos Mainnet Beta
 338 Cronos Testnet
 */
-
-window.web3ChainId = 43113;
+window.web3ChainId = 137;

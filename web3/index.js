@@ -80,7 +80,7 @@ async function connect() {
   web3gl.networkId = parseInt(provider.chainId);
 
   // if current network id is not equal to network id, then switch
-  if (web3gl.networkId != window.web3ChainId) {
+  /*if (web3gl.networkId != window.web3ChainId) {
     try {
       await window.ethereum.request({
         method: "wallet_switchEthereumChain",
@@ -90,7 +90,7 @@ async function connect() {
       // if network isn't added, pop-up metamask to add
       await addEthereumChain();
     }
-  }
+  }*/
 
   // set current account
   web3gl.connectAccount = (await web3.eth.getAccounts())[0]
